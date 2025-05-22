@@ -140,3 +140,25 @@ A protocol that turns swag donations into on-chain credentials.
 - 公的な補助金(政府など)
 - Grant（web3 系）
 - データの販売
+
+## Team(Who)
+
+省略
+
+## Resources
+
+省略
+
+## Roadmap
+
+省略
+
+## Tech Stack
+
+- Sui
+- Walrus
+- Next.js
+
+## Ending
+
+省略
