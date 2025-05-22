@@ -19,3 +19,19 @@
 - Roadmap
 - Tech Stack
 - Ending
+
+## Project Phrases
+
+### Tagline
+
+The Liquidity of Goodwill.
+
+### Brand Copy
+
+Donate Swag.
+Mint Reputation.
+Prove You’re a GIVER - onchain.
+
+### Short Description
+
+A protocol that turns swag donations into on-chain credentials.
