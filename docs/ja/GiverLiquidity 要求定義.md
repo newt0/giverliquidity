@@ -100,3 +100,11 @@ A protocol that turns swag donations into on-chain credentials.
 - Giver と Taker のどちらが多いか選び、投票する
 - バイナリー型
 -
+
+## Features(What)
+
+- Sui 活用
+- Walrus 活用
+- Sui ウォレットなしでも参加できるように、ソーシャルログインに対応。Twitter アカウントを本体にする。ソーシャル連携が重要なため
+- $SUI を持っていなくてもミントできるように、Gasless Tx に対応
+- $SUI を持っていなくても Bet できるように、Crosschain Tx に対応。クレジットカード対応（※ただし、Prediction Market はオンラインカジノ扱いになるため、法規制に注意。あるいは、勝利時の報酬を金銭以外にするなど）
