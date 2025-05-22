@@ -10,79 +10,104 @@
 - Mint Reputation.
 - Prove You're a GIVER - onchain.
 
-**Mission**: Web3 イベントの Swag 配布文化を社会貢献に転換し、善意の行動をオンチェーンで可視化・流通させる分散型レピュテーションプロトコル
+**Short Description**:
 
----
+A protocol that turns swag donations into on-chain credentials.
 
-## 🌟 Vision & Philosophy
+## プロジェクト概要
 
-### Why We Exist
+Giver Liquidity は、Web3 イベントで配布される Swag（ノベルティ）を起点に、参加者が寄付または寄付意思を表明することで、その行為を Reputation NFT として Mint できる dApp である。
 
-Web3 業界は理想的なビジョンで始まったにも関わらず、現在は投機的な側面が強調され、社会的信頼が低下している。私たちは**Web3 を世界の Giver にする**という使命のもと、善意の行動をオンチェーンで証明し、業界のレピュテーション向上を目指す。
+- **参加者**：Swag を受け取るか、不要であれば寄付。行動をオンチェーンに記録し、NFT として称号を受け取る。
+- **出展企業**：余剰 Swag を一括寄付し、その記録を企業の Reputation として活用できる。
+- **社会貢献**と**信頼の可視化**を Web3 の文脈で融合し、レピュテーション・プロトコルとして機能する。
 
-### Core Philosophy
+さらに、メタ推理型予測市場と統合することで、行動だけでなく「社会の善意をどう見るか」という推論を記録する。SNS シェア設計も重視し、アテンションエコノミーにおいて自然に拡散される構造を持つ。
 
-- **意思の価値化**: トランザクションに依存しない誠意の記録
-- **透明性の確保**: SNS アイデンティティ連携による虚偽抑止
-- **社会的信用の構築**: オンチェーン Karma システムの実現
+## Vision
 
----
+- 理想主義で始まった Web3 は、今や強欲と欺瞞に満ちた世界になっている。
+- 業界の印象は世界的に悪化しつつあり、信頼の再構築が急務である。
+- しかし、Web3 だからこそ実現できる「善意の証明」がある。
+- GiverLiquidity は、Web3 発の善意を社会に届けることで、信頼を再構築する挑戦である。
+- Web3 を「世界の Giver」へ。
 
-## 🎯 Market Analysis & Problem Statement
+## MARKET & ISSUES
 
-### Current Market Issues
+- Web3 業界ではイベントごとに大量の Swag が配布されており、その多くが使われることなく処分されている。
+- カンファレンス自体も供給過多で、Swag も過剰供給気味になっている。
+- イベント満足度に直接寄与しない Swag の一部を、社会的に必要とされている人々へ届けることで、大きな価値転換が可能である。
+- 追加コスト不要で実現でき、既存リソースの再分配により、企業・ユーザー・第三者すべてがハッピーになるスキーム。
+- 特に、被災地・孤児院・貧困地域など、イベント開催国周辺への寄付が高い意義を持つ。
+- 被災者としての個人的経験を踏まえても、このスキームには確かな価値があると信じている。
 
-1. **Swag 供給過多**: Web3 イベントで大量配布される Swag の多くが未使用で余っている
-2. **レピュテーション危機**: Web3 業界への世界的な信頼低下
-3. **機会損失**: 善意のリソースが有効活用されていない
-4. **証明困難**: 個人の社会貢献活動が適切に評価・可視化されていない
+## Problem
 
-### Target Market Size
+- Web3 の世界的なレピュテーションの低下。
+- イベントを中心とした Swag の供給過多、およびその UX 価値の低下。
+- 善意ある行動が可視化されず、他者に伝播されない設計。
+
+## Solution (How)
+
+- Swag の寄付行動を Web3 的に抽象化し、行動ログとレピュテーションをリンクさせる dApp を開発。
+- 参加者の意思・行動をオンチェーンに記録し、NFT（SBT）として称号化。
+- SNS 拡散設計によって、行動が社会に伝播する構造を設計。
+- さらに、メタ推理型予測市場を導入し、寄付行動に対する「社会的期待や予想」も記録・評価可能に。
+- 二択行動 × 二択予測によって、4 パターンの思想ポジションが導出され、グロースにも活用可能。
+
+## 哲学・設計思想
+
+- オンチェーン Tx だけでなく、意志そのものを記録対象にする。
+- SNS ID との紐づけにより、虚偽やスパムを抑制。
+- Reputation を Web3 における信用の基礎インフラと位置づける。
+
+## Target Market Size
 
 - グローバル Web3 イベント: 年間 1,000+件
 - 想定 Swag 流通量: 年間数百万アイテム
 - 潜在寄付価値: 年間数億円相当
 
----
+## How to Work (What)
 
-## 💡 Solution Architecture
+### 2B 寄付（企業向け）
 
-### Core Solution
+- Swag を一括寄付 → SBT 発行 + SNS シェア
+- Walrus に記録、企業名・Twitter アカウントと紐づけ
 
-GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）に変換**し、個人・企業の社会的レピュテーションを可視化する分散型プロトコルです。
+### 2C 寄付（イベント参加者）
 
-### Key Innovation Points
+- Swag 受領時に「受け取る or 寄付する」を選択
+- 寄付意思を記録 → SBT ミント用 QR を取得
+- Swag ボックス投函後、UI から記録送信 → Reputation NFT を受領
 
-1. **ゼロコスト実装**: 既存のイベントリソース内で完結
-2. **迅速な意思決定**: 追加予算不要のため企業導入が容易
-3. **ゲーミフィケーション**: 予測市場との統合でエンゲージメント向上
-4. **バイラル設計**: SNS 連携による自然な拡散メカニズム
+※ センサー等による物理的検証は未導入（工数削減のため）。
 
----
+### Prediction Market（予測市場）
 
-## 🛠 Technical Architecture
+- Giver or Taker の多数派を予想してベット
+- Binary 構造（Yes/No）で UX シンプルに
 
-### Sui Blockchain Integration
+- Sui チェーン採用
+- Walrus によるオフチェーン記録
+- zkLogin によるソーシャルログイン（Twitter）
+- Gasless Tx 対応
+- Prediction Market は無料ベット or トークン報酬型（法規制対策）
 
-- **SBT (Soulbound Token)**: 非譲渡型レピュテーション NFT
-- **Gasless Transaction**: $SUI 非保有者も参加可能
-- **高速処理**: Sui の並列実行による快適 UX
+### コア機能
 
-### Walrus Storage Integration
+- 意思表明 + 記録
+- Reputation NFT の Mint
+- イベント別・Swag 別の記録可視化
+- 企業モードで一括寄付 → 可視化対応
 
-- **寄付記録の永続化**: 改ざん不可能な分散ストレージ
-- **メタデータ管理**: 画像・証明書類の分散保存
-- **コスト効率**: 従来の IPFS より高性能・低コスト
+### 拡張機能
 
-### Cross-Chain Compatibility
+- Prediction Market
+- Giver 率の可視化
+- 報酬配分
+- 信頼スコア形成・DAO 参加条件連携
 
-- **マルチチェーン対応**: 他チェーンからの参加も可能
-- **フィアット決済**: クレジットカードによる寄付対応
-- **ソーシャルログイン**: Twitter 連携でウォレット不要参加
-
----
-
-## 👥 Target Users & Use Cases
+## 👥 Target Users
 
 ### Primary Users (B2C)
 
@@ -96,22 +121,6 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - **CEX/DEX**: 暗号資産取引所
 - **Web3 Startups**: 新興 Web3 企業
 
-### Use Case Examples
-
-#### Case 1: ETHGlobal Tokyo
-
-- 参加者がブースで Swag 受領時に QR コード読み込み
-- 寄付意思表明 → Reputation SBT mint
-- 予測市場で「今回の Giver 率」にベット参加
-
-#### Case 2: 自治体連携イベント（仙台市）
-
-- 地域産品クーポンを Swag 代替として配布
-- 寄付先は東北復興支援プロジェクト
-- Giver レピュテーションが DAO 参加権に連動
-
----
-
 ## 🔮 Prediction Market Integration
 
 ### Meta-Reasoning Market Design
@@ -120,20 +129,19 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - **4 分類分析**: 寄付行動(Yes/No) × 予測(High/Low)によるペルソナ分析
 - **GameFi 要素**: 予測成功によるリワード配布
 
-### Revenue Streams
+## Revenue Model
 
-1. **Prediction Market Fee**: ベット手数料（2-5%）
-2. **Enterprise Licensing**: 企業向けダッシュボード利用料
-3. **Data Analytics**: 匿名化された行動データ販売
-4. **Premium Features**: Giver NFT 保有者向け限定機能
-
----
+- Prediction Market 参加手数料
+- Reputation NFT 連動の広告モデル
+- 公的補助金・助成金
+- Web3 Grant
+- Reputation スコア活用（DAO 選挙参加、特典付与）
+- 企業・出展者への導線販売
 
 ## 📊 Key Performance Indicators
 
 ### Primary KPIs
 
-- **Giver Rate**: Swag 受領者中の寄付意思表明割合
 - **SBT Mint Volume**: 発行された証明書数
 - **Total Donation Value**: 累積寄付額・回数
 
@@ -148,8 +156,6 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - **MVP 完成度**: 核となる寄付 →SBT mint 機能の実装
 - **Sui/Walrus 活用度**: ブロックチェーン機能の効果的活用
 - **社会的インパクト**: 実際の寄付実行・受益者への価値提供
-
----
 
 ## 🚀 MVP Development Plan
 
@@ -172,30 +178,23 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - 分析ダッシュボード
 - API 提供
 
----
-
 ## 🏗 Technical Stack
 
 ### Blockchain Layer
 
 - **Sui Blockchain**: メインチェーン（SBT 発行・管理）
 - **Walrus Storage**: 分散ストレージ（証明書・メタデータ）
-- **Cross-chain Bridge**: 他チェーンとの相互運用性
+- **Wormhole**: 他チェーンとの相互運用性
 
 ### Application Layer
 
-- **Frontend**: Next.js + TypeScript
-- **Backend**: Node.js + Express
-- **Database**: PostgreSQL (オフチェーンデータ)
-- **Authentication**: Social Login (Twitter OAuth)
+- Next.js + TypeScript
 
 ### Integration Services
 
 - **Payment**: Stripe (フィアット決済)
 - **Social**: Twitter API
 - **Analytics**: Custom dashboard + Google Analytics
-
----
 
 ## 🌍 Social Impact & Sustainability
 
@@ -217,8 +216,6 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - **コミュニティ駆動**: DAO 化による分散ガバナンス移行
 - **パートナーシップ**: 企業・自治体との持続的協力関係
 
----
-
 ## 🎯 Hackathon Presentation Strategy
 
 ### Demo Scenario
@@ -234,8 +231,6 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - **Technical Innovation**: Sui/Walrus の特性を活かした設計
 - **Scalability**: グローバル展開可能なビジネスモデル
 - **Community Impact**: Web3 業界全体への貢献
-
----
 
 ## 📈 Post-Hackathon Roadmap
 
@@ -262,8 +257,6 @@ GiverLiquidity は、**Swag 寄付行動をオンチェーン証明書（SBT）�
 - コミュニティガバナンスの導入
 - トークンエコノミクスの設計
 - 持続可能な運営体制の確立
-
----
 
 ## 🔚 Conclusion
 
