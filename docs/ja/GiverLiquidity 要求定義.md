@@ -121,3 +121,22 @@ A protocol that turns swag donations into on-chain credentials.
 
 - L1/L2
 - CEX
+
+## User Flow
+
+省略
+
+## KPIs
+
+- 寄付数
+- SBT のミント数
+- Bet の参加者数
+- SNS 上の UGC 数
+
+## Revenue Model
+
+- Prediction Market のレベニュー
+- 企業広告
+- 公的な補助金(政府など)
+- Grant（web3 系）
+- データの販売
