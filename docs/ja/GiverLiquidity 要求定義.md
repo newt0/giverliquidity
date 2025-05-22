@@ -36,7 +36,17 @@ Prove You’re a GIVER - onchain.
 
 A protocol that turns swag donations into on-chain credentials.
 
----
+## プロジェクト概要
+
+Giver Liquidity は、Web3 イベントで配布される Swag を起点に、参加者が寄付を行い、その Reputation を NFT として Mint する dApp である。
+
+- Swag 受領者：寄付 or 寄付意思表明 → Reputation NFT の Mint
+- 出展企業：寄付記録 + Reputation 表示
+- オンチェーンで行動と評判が結びつき、信頼の流通が生まれる
+
+さらに、メタ推理型予測市場と統合することで、web3 ならではのゲーミフィケーション要素を取り入れる。
+
+また、SNS シェア機能を促す設計で、アテンションエコノミーを攻略する。
 
 ## VISION (Why)[抽象]
 
@@ -73,6 +83,12 @@ A protocol that turns swag donations into on-chain credentials.
 - また、メタ推理型予測市場という web3 ネイティブが好きなゲーミフィケーション要素と統合することで、アテンションエコノミーのハックや収益性も確保する
 - 寄付行動の選択（二択） x 予測（二択）によって、４通りのペルソナ分析が可能。これもまた、自己分析という人気ジャンルであり、グロースハックしやすい
 
+## 哲学・設計思想
+
+- Tx に依存しない「意思の記録」＝誠意の価値化
+- SNS アイデンティティとの紐づけで虚偽を抑止
+- Reputation は社会的信用の起点（オンチェーン Karma）
+
 ## How to Work(What) [寄付]
 
 - 2C と 2B の二つの寄付の主体がある。イニシャル MVP では、まずは 2B の寄付に絞る。実現容易なため
@@ -99,7 +115,6 @@ A protocol that turns swag donations into on-chain credentials.
 
 - Giver と Taker のどちらが多いか選び、投票する
 - バイナリー型
--
 
 ## Features(What)
 
@@ -108,6 +123,19 @@ A protocol that turns swag donations into on-chain credentials.
 - Sui ウォレットなしでも参加できるように、ソーシャルログインに対応。Twitter アカウントを本体にする。ソーシャル連携が重要なため
 - $SUI を持っていなくてもミントできるように、Gasless Tx に対応
 - $SUI を持っていなくても Bet できるように、Crosschain Tx に対応。クレジットカード対応（※ただし、Prediction Market はオンラインカジノ扱いになるため、法規制に注意。あるいは、勝利時の報酬を金銭以外にするなど）
+
+### コア機能
+
+- 寄付・意思表明：フォームから寄付額 or 意思表明を記録
+- Reputation NFT の発行：イベント別・Swag 別に Mint
+- オンチェーン記録：Sui チェーンに記録し、誰でも参照可能
+- 企業・自治体モード：まとめて寄付 → Reputation 表示に反映
+
+### 🔮 拡張機能：予測市場連携
+
+- 「このイベントで何％が寄付するか？」の予測市場を立ち上げ
+- Giver 率を予測して市場を形成
+- GameFi 的リワード配布にも応用可能
 
 ## Target User(Whom)
 
@@ -124,14 +152,35 @@ A protocol that turns swag donations into on-chain credentials.
 
 ## User Flow
 
-省略
+### ユーザーフロー（参加者）
+
+- Swag 受領時に QR コードスキャン
+- 寄付意思表明を実施
+- Giver or Taker の予想を Bet（無料 Bet も可能）
+- Reputation NFT を Mint
 
 ## KPIs
 
-- 寄付数
-- SBT のミント数
+### 寄付
+
+- Giver 率（Swag 受領者中の寄付割合）
+- NFT Mint 数・保持率
+- 合計寄付額 & 回数
+
+### Prediction
+
+- Bet の合計金額
 - Bet の参加者数
+
+### アテンションエコノミー
+
 - SNS 上の UGC 数
+
+### B2B
+
+- 参加した有力な企業数
+- 企業・自治体の導入件数
+- 寄付対象とした天災や施設数
 
 ## Revenue Model
 
@@ -140,14 +189,23 @@ A protocol that turns swag donations into on-chain credentials.
 - 公的な補助金(政府など)
 - Grant（web3 系）
 - データの販売
+- Reputation スコアを活用した選抜イベントや DAO 選挙参加
+- Giver NFT 保有者限定の Airdrop/クーポン
+- 出展者による広告/寄付リストへのアクセス課金
 
-## Team(Who)
+## Usecases
 
-省略
+1. CASE 1: ETHGlobal Tokyo
 
-## Resources
+- 参加者がブースで T シャツを受け取る
+- QR コードを読み込み、dApp で寄付額を入力 → Reputation NFT を Mint
+- NFT は非譲渡型（Soulbound）でプロフィールに表示可能
 
-省略
+2. CASE 2: 自治体 ×Web3 イベント（仙台市）
+
+- Swag の代わりに市内産品クーポン
+- 寄付先は被災地復興・観光支援プロジェクト
+- Reputation が DAO 参加条件に
 
 ## Roadmap
 
@@ -158,7 +216,3 @@ A protocol that turns swag donations into on-chain credentials.
 - Sui
 - Walrus
 - Next.js
-
-## Ending
-
-省略
